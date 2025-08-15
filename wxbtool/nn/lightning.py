@@ -203,7 +203,7 @@ class LightningModel(ltn.LightningModule):
         # Skip plotting in CI mode or test mode
         if self.ci or mode == "test":
             return
-            
+
         # Original implementation
         for bas, var in enumerate(self.model.setting.vars_in):
             inp = inputs[var]
